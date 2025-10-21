@@ -13,15 +13,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-end; /* 📍 baja el contenido hacia abajo */
             min-height: 100vh;
-            padding-top: 90px; /* 📏 baja el formulario */
+            padding-bottom: 60px; /* 📏 separa un poco del borde inferior */
         }
 
         .form-container {
             width: 85%;
-            max-width: 350px; /* 📏 un poco más pequeño */
-            background-color: rgba(253, 243, 231, 0.82); /* 📏 más transparente */
+            max-width: 340px;
+            background-color: rgba(253, 243, 231, 0.82);
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -81,11 +81,12 @@
         /* 📱 Ajustes para celular */
         @media (max-width: 600px) {
             body {
-                padding-top: 70px; /* baja un poco menos en móvil */
+                justify-content: flex-end; /* sigue abajo en móvil */
+                padding-bottom: 40px;
             }
             .form-container {
                 width: 80%;
-                max-width: 320px;
+                max-width: 310px;
                 background-color: rgba(253, 243, 231, 0.78);
             }
             h1 {
